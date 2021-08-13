@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/addprofileimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_baseline_person_24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/addprofileimg"
+        android:layout_margin="30dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/addUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Enter Email"
+            android:paddingLeft="10dp"
+            android:id="@+id/addEmail"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/addUsername"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Enter Mobile No"
+            android:paddingLeft="10dp"
+            android:id="@+id/addMobile"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/addEmail"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Enter Address"
+            android:paddingLeft="10dp"
+            android:id="@+id/addAddress"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/addMobile"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="add"
+            android:id="@+id/addbtn"
+            android:layout_below="@id/addAddress"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
